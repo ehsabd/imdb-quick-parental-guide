@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Imdb Quick Parental Guide",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "js": ["quick-parental-guide.js"],
+      "matches":["https://imdb.com/*", "https://www.imdb.com/*"]
+      
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
